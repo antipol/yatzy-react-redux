@@ -1,4 +1,5 @@
 import React from "react";
+import { RollDice } from "../../components/RollDice";
 import { connect } from "react-redux";
 
 const Game = props => {
@@ -6,6 +7,7 @@ const Game = props => {
     <div>
       <h3>Game View</h3>
       <p>It's {props.currentPlayer}'s turn!</p>
+      <RollDice />
     </div>
   );
 };
