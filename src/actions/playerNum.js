@@ -4,3 +4,5 @@ export const playerNum = numOfPlayers => dispatch => {
     payload: numOfPlayers
   });
 };
+
+// action is created when user on start screen enters how many people are gonna play

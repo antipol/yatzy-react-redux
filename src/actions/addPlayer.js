@@ -7,3 +7,5 @@ export const addPlayer = (nameArr, numOfPlayers) => dispatch => {
     }
   });
 };
+
+//action created when user has entered names for all players and clicked next

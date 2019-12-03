@@ -7,9 +7,13 @@ import { connect } from "react-redux";
 const Players = props => {
   const numOfPlayers = props.numOfPlayers;
 
+  //create new array with the number of players
   const playerArray = [...Array(numOfPlayers).keys()];
 
+  //again, check how to target form input
   const formRef = React.createRef();
+
+  //name array to be used when creating action to add players
   const nameArr = [];
 
   const handleSubmit = e => {
@@ -50,8 +54,5 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default withRouter(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(Players)
+  connect(mapStateToProps, mapDispatchToProps)(Players)
 );

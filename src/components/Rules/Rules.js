@@ -11,6 +11,7 @@ const Rules = props => {
   return (
     <div>
       <button onClick={handleClick}>Rules</button>
+      {/* ternary statement to determine whether rules are visible */}
       {isOpen ? (
         <div>
           <p>

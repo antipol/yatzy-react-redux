@@ -5,6 +5,7 @@ const initialState = {
 const playerNumReducer = (state = initialState, action) => {
   switch (action.type) {
     case "CHOOSE_PLAYER_NUM":
+      //will check whether to also return ...state
       return {
         numOfPlayers: parseInt(action.payload)
       };
